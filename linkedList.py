@@ -13,6 +13,17 @@ class LinkedList:
         while (temp):
             print(temp.data)
             temp = temp.next
+    def push(self, newdata):
+        newNode = Node(new_data)
+        newNode.next = self.head
+        self.head = new_node
+        
+#    def delete(self, key)
+#        temp = self.head
+#        if temp == 0:
+#            print("no value")
+#        while temp:
+            
         
 firstLinked = LinkedList()
 firstLinked.head = Listnode(8)
