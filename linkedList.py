@@ -1,8 +1,8 @@
-class Listnode:
+class listNode:
     def __init__(self, value): # initial elemant set-up
         self.data = value
         self.next = None
-class LinkedList:
+class linkedList:
   
     # Function to initialize the Linked
     # List object
@@ -13,11 +13,17 @@ class LinkedList:
         while (temp):
             print(temp.data)
             temp = temp.next
-    def push(self, newdata):
-        newNode = Node(new_data)
+    def push(self, newData): # Add in the head
+        newNode = listNode(newData)
         newNode.next = self.head
         self.head = new_node
-        
+    def insert(self, pervNode, newData)
+        if prevNode is None:
+            print("the previous node must be Linkedlist")
+            return
+        newNode = listNode(newData)
+        newNode.next = prevNode.next
+        prevNode.next = newNode
 #    def delete(self, key)
 #        temp = self.head
 #        if temp == 0:
